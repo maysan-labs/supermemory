@@ -1,7 +1,11 @@
 {
-	"$schema": "https://turborepo.com/schema.json",
+	"$schema": "https://turbo.build/schema.json",
 	"ui": "tui",
 	"tasks": {
+		"@supermemory/ai-sdk#build": { "outputs": ["dist/**"] },
+		"@supermemory/memory-graph#build": { "outputs": ["dist/**"] },
+		"@supermemory/tools#build": { "outputs": ["dist/**"] },
+		"supermemory-browser-extension#build": { "outputs": [".output/**"] },
 		"build": {
 			"dependsOn": ["^build"],
 			"inputs": ["$TURBO_DEFAULT$", ".env*"],
