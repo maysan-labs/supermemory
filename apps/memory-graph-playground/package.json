@@ -2,7 +2,10 @@
   "name": "memory-graph-playground",
   "version": "0.1.0",
   "private": true,
-  "portless": { "name": "graph.dev.supermemory", "script": "dev:app" },
+  "portless": {
+    "name": "graph.dev.supermemory",
+    "script": "dev:app"
+  },
   "scripts": {
     "dev": "portless",
     "dev:app": "next dev --port ${PORT:-3004}",
@@ -21,8 +24,8 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
+    "baseline-browser-mapping": "^2.11.8",
     "tailwindcss": "^4",
-    "typescript": "^5",
-    "baseline-browser-mapping": "^2.11.8"
+    "typescript": "^5"
   }
 }
